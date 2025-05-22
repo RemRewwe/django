@@ -1,0 +1,23 @@
+{% extends 'meuapp/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Nossos Produtos</h2>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for produto in produtos %}
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ produto.nome }}</h5>
+                    <p class="card-text">{{ produto.descricao }}</p>
+                    <p class="text-success fw-bold">R$ {{ produto.preco }}</p>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="alert alert-info">Nenhum produto disponível.</div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
