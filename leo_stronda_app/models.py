@@ -21,10 +21,10 @@ class UserProfile(models.Model):
     - Campos personalizados
     '''
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    #foto = models.ImageField(
-    #    upload_to='/',
-     #   default=''
-    #)
+    foto = models.ImageField(
+        upload_to='media/',
+        default='blank'
+    )
     bio = models.TextField(blank=True)
 
     def __str__(self):

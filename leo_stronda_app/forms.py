@@ -9,4 +9,4 @@ class ProdutoForm(forms.ModelForm):
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        fields = ['profile_pic']  # Apenas o campo de foto
+        fields = [] # Apenas o campo de foto

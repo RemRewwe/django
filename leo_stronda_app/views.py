@@ -7,9 +7,9 @@ import os
 def home(request):
     return render(request, 'leo_stronda_app/home.html')
 
-def produtos(request):
+def produto(request):
     produtos = Produto.objects.filter(disponivel=True)
-    return render(request, 'leo_stronda_app/produtos.html', {'produtos': produtos})
+    return render(request, 'leo_stronda_app/produto.html', {'produtos': produtos})
 
 def contatos(request):
     return render(request, 'leo_stronda_app/contatos.html')
