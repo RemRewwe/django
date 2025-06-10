@@ -1,0 +1,31 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}JWC Engine{% endblock %}</title>
+    {% block styles %}
+
+    <link rel="stylesheet" href="{% static 'pro_final/css/cadastro.css' %}">"
+    <link rel="stylesheet" href="{% static 'pro_final/css/home.css' %}">"
+    <link rel="stylesheet" href="{% static 'pro_final/css/login.css' %}">"
+    <!-- Espaço para CSS específico -->
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho comum -->
+    </header>
+
+    <main class="container">
+        {% block content %}
+        <!-- Conteúdo específico de cada página -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Rodapé comum -->
+    </footer>
+</body>
+</html>
