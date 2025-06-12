@@ -1,0 +1,123 @@
+{% extends 'pro_final/base.html' %}
+
+{% block title %}JWC Tech {% endblock %}
+
+
+
+
+
+{% block content %}
+
+{% with "Bem-vindo a JWC Engine, O mais novo motor grafico do mercado" as header_title %}
+{% with "Conheça nosso motor grafico e faça uma conta" as header_subtitle %}
+    {% include 'pro_final/partials/header.html' %}
+{% endwith %}
+{% endwith %}
+
+<header>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1>{% block header_title %}JWC Engine{% endblock %}</h1>
+            <p>{% block header_subtitle %}Venha produzir os seus jogos conosco{% endblock %}</p>
+        </div>
+    </header>
+    
+    
+</header>
+
+</header>
+        <section>
+            <div class=" background-section">
+            <iframe width="1200" height="350" src="https://www.youtube.com/embed/ULfjoCqEo6I" title="Gran Turismo 7 - Opening Movie | PS5, PS4" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <div class="conteudo">
+                    <img src="" alt="">
+                </div>
+            </div>
+            </section>
+        <section class="space">
+            <div>
+                
+            </div>
+
+        </section>    
+
+        <section id="features" class="features-section">
+            <h2>Recursos Poderosos ao Seu Alcance</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="icone-3d.png" alt="Renderização 3D">
+                    <h3>Renderização 3D Avançada</h3>
+                    <p>Gráficos impressionantes com otimização de performance.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="icone-scripting.png" alt="Scripting Fácil">
+                    <h3>Scripting Intuitivo</h3>
+                    <p>Desenvolva lógica de jogo sem complicação, mesmo para iniciantes.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="icone-multiplataforma.png" alt="Multiplataforma">
+                    <h3>Publicação Multiplataforma</h3>
+                    <p>Exporte seu jogo para PC, mobile e consoles com facilidade.</p>
+                </div>
+                </div>
+        </section>
+ 
+        <section id="pricing" class="pricing-section">
+            <h2>Escolha o Plano Ideal Para Você</h2>
+            <div class="pricing-grid">
+                <div class="price-plan">
+                    <h3>Plano Básico</h3>
+                    <p class="price">$0/mês</p>
+                    <ul>
+                        <li>Recursos Essenciais</li>
+                        <li>Exportação Limitada</li>
+                        <li>Suporte da Comunidade</li>
+                    </ul>
+                    <button class="cta-button">Começar Grátis</button>
+                </div>
+                <div class="price-plan featured">
+                    <h3>Plano Pro</h3>
+                    <p class="price">$20/mês</p>
+                    <ul>
+                        <li>Todos os Recursos</li>
+                        <li>Exportação Ilimitada</li>
+                        <li>Suporte Prioritário</li>
+                        <li>Acesso a Betas</li>
+                    </ul>
+                    <button class="cta-button">Assinar Agora</button>
+                </div>
+                <div class="price-plan">
+                    <h3>Plano Estúdio</h3>
+                    <p class="price">$40/mês</p>
+                    <ul>
+                        <li>Tudo do Pro</li>
+                        <li>Licenças Múltiplas</li>
+                        <li>Consultoria Dedicada</li>
+                    </ul>
+                    <button class="cta-button">Entre em Contato</button>
+                </div>
+            </div>
+        </section>
+        {% endblock %}
+
+       
+
+        
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 jwc engine. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
